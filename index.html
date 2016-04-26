@@ -49,7 +49,7 @@
 		font-family: Roboto;
 		font-size: inherit;
 		color: inherit;
-		background: rgba(255, 255, 255, 0.5);
+		background: rgba(255, 255, 255, 0.25);
 		cursor: pointer;
 		padding: 25px 80px;
 		display: inline-block;
@@ -130,7 +130,7 @@
 	    </div>
 	    <div id="eliseo">
 		    <center>
-		    	<div class="name">Eliseo Martelli</div> 
+		    	<div class="name">Eliseo Martelli</div>
 		    	<a href="https://eliseomartelli.github.io">
 	    			<button class="btn btn-1a">Website</button>
 	    		</a>
@@ -146,8 +146,8 @@
 			return "linear-gradient(rgba(" + getRandom() + ", " + getRandom() + ", " + getRandom() + ", 0.45), rgba(" + getRandom() + ", " + getRandom() + ", " + getRandom() + ", 0.45)), url(img/" + (matteo ? "matteo.jpeg" : "eliseo.jpg") + ") no-repeat;";
 		}
 
-		document.getElementById("matteo").style = "background: " + buildBackgroundString(true) + "background-size: cover; background-clip: border-box;";
-		document.getElementById("eliseo").style = "background: " + buildBackgroundString(false) + "background-size: cover; background-clip: border-box;";
+		document.getElementById("matteo").style = "background: " + buildBackgroundString(true) + "background-size: cover; background-clip: border-box; background-position: center;";
+		document.getElementById("eliseo").style = "background: " + buildBackgroundString(false) + "background-size: cover; background-clip: border-box; background-position: center;";
 	</script>
 </body>
 </html>
