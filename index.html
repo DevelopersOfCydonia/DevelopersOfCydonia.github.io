@@ -4,6 +4,7 @@
 	<title>Developers Of Cydonia</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+	<meta name="theme-color" content="#212121">
 </head>
 <style>
 	@font-face{
@@ -20,7 +21,7 @@
 
 	.wrapper {
 		width: 100%;
-		height: 100%;
+		height: calc(100% - 4rem);
 		position: absolute;
 	}
 
@@ -39,7 +40,6 @@
 	.name {
 		color: white;
 		font-size: 5em;
-		padding-top: 35%;
 		font-family: Sabado;
 		margin-left: 4%;
 		margin-right: 4%;
@@ -50,7 +50,7 @@
 		font-family: Roboto;
 		font-size: inherit;
 		color: inherit;
-		background: rgba(255, 255, 255, 0.25);
+		background: rgba(255, 255, 255, 0.12);
 		cursor: pointer;
 		padding: 25px 80px;
 		display: inline-block;
@@ -84,19 +84,18 @@
 	@media screen and (max-width: 943px) {
 		#matteo {
 			width: 100%;
-			height: 50%;
+			height: 70%;
 		}
 
 		#eliseo {
 			width: 100%;
-			height: 50%;
+			height: 70%;
 			float: right;
 		}
 
 		.name {
 			color: white;
 			font-size: 5em;
-			padding-top: 10%;
 			font-family: Sabado;
 			margin-left: 4%;
 			margin-right: 4%;
@@ -107,7 +106,6 @@
 		.name {
 			color: white;
 			font-size: 3em;
-			padding-top: 26%;
 			font-family: Sabado;
 			margin-left: 4%;
 			margin-right: 4%;
@@ -116,12 +114,50 @@
 		.btn {
 			padding: 20px;
 		}
+
+		.logo {
+			text-align: center;
+			margin-left: 0;
+		}
 	}
 
+	.person {
+		display: table;
+		min-height: 400px;
+	}
+	.person center {
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	header {
+		background: #212121;
+	}
+
+	.logo {
+		background: #212121;
+	}
+
+	.logo {
+		font-family: Sabado;
+		color: #fff;
+		margin-left: 1rem;
+		padding: 1rem;
+		font-size: 2rem;
+	}
+
+	.logo span {
+		font-size: 1.2rem;
+	}
 </style>
 <body>
+	<header>
+		<div class="logo">
+			developers<span>of</span>cydonia
+		</div>
+	</header>
 	<div class="wrapper">
-	    <div id="matteo">
+	    <div class="person" id="matteo">
 	    	<center>
 	    		<div class="name">Matteo Lobello</div>
 	    		<a href="https://ohmylob.github.io">
@@ -129,7 +165,7 @@
 	    		</a>
 	    	</center>
 	    </div>
-	    <div id="eliseo">
+	    <div  class="person" id="eliseo">
 		    <center>
 		    	<div class="name">Eliseo Martelli</div>
 		    	<a href="https://eliseomartelli.github.io">
