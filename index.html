@@ -2,154 +2,13 @@
 <html>
 <head>
 	<title>Developers Of Cydonia</title>
+	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 	<meta name="theme-color" content="#212121">
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 </head>
-<style>
-	@font-face{
-		font-family: Sabado;
-		src: url(font/sabado.otf);
-	}
-
-	body {
-		width: 100%;
-	    height: 100%;
-	    margin: 0;
-	    padding: 0;
-	}
-
-	.wrapper {
-		width: 100%;
-		height: calc(100% - 4rem);
-		position: absolute;
-	}
-
-	#matteo {
-		width: 50%;
-		height: 100%;
-		float: left;
-	}
-
-	#eliseo {
-		width: 50%;
-		height: 100%;
-		float: right;
-	}
-
-	.name {
-		color: white;
-		font-size: 5em;
-		font-family: Sabado;
-		margin-left: 4%;
-		margin-right: 4%;
-	}
-
-	.btn {
-		border: none;
-		font-family: Roboto;
-		font-size: inherit;
-		color: inherit;
-		background: rgba(255, 255, 255, 0.12);
-		cursor: pointer;
-		padding: 25px 80px;
-		display: inline-block;
-		margin: 15px 30px;
-		text-transform: uppercase;
-		letter-spacing: 1px;
-		font-weight: 700;
-		outline: none;
-		position: relative;
-		-webkit-transition: all 0.3s;
-		-moz-transition: all 0.3s;
-		transition: all 0.3s;
-		border: 3px solid #fff;
-		color: #fff;
-	}
-
-	.btn:after {
-		content: '';
-		position: absolute;
-		z-index: -1;
-		-webkit-transition: all 0.3s;
-		-moz-transition: all 0.3s;
-		transition: all 0.3s;
-	}
-
-	.btn:hover, .btn:active {
-		color: #000;
-		background: #fff;
-	}
-
-	@media screen and (max-width: 943px) {
-		#matteo {
-			width: 100%;
-			height: 70%;
-		}
-
-		#eliseo {
-			width: 100%;
-			height: 70%;
-			float: right;
-		}
-
-		.name {
-			color: white;
-			font-size: 5em;
-			font-family: Sabado;
-			margin-left: 4%;
-			margin-right: 4%;
-		}
-	}
-
-	@media screen and (max-width: 588px) {
-		.name {
-			color: white;
-			font-size: 3em;
-			font-family: Sabado;
-			margin-left: 4%;
-			margin-right: 4%;
-		}
-
-		.btn {
-			padding: 20px;
-		}
-
-		.logo {
-			text-align: center;
-			margin-left: 0;
-		}
-	}
-
-	.person {
-		display: table;
-		min-height: 400px;
-	}
-	.person center {
-		display: table-cell;
-		vertical-align: middle;
-	}
-
-	header {
-		background: #212121;
-	}
-
-	.logo {
-		background: #212121;
-	}
-
-	.logo {
-		font-family: Sabado;
-		color: #fff;
-		margin-left: 1rem;
-		padding: 1rem;
-		font-size: 2rem;
-	}
-
-	.logo span {
-		font-size: 1.2rem;
-	}
-</style>
 <body>
 	<header>
 		<div class="logo">
@@ -174,17 +33,6 @@
 		    </center>
 	    </div>
 	</div>
-	<script>
-		function getRandom() {
-			return Math.floor(Math.random() * 255);
-		}
-
-		function buildBackgroundString(matteo) {
-			return "linear-gradient(rgba(" + getRandom() + ", " + getRandom() + ", " + getRandom() + ", 0.45), rgba(" + getRandom() + ", " + getRandom() + ", " + getRandom() + ", 0.45)), url(img/" + (matteo ? "matteo.jpeg" : "eliseo.jpg") + ") no-repeat;";
-		}
-
-		document.getElementById("matteo").style = "background: " + buildBackgroundString(true) + "background-size: cover; background-clip: border-box; background-position: center;";
-		document.getElementById("eliseo").style = "background: " + buildBackgroundString(false) + "background-size: cover; background-clip: border-box; background-position: center;";
-	</script>
+	<script src="js/init.js"></script>
 </body>
 </html>
